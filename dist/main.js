@@ -156,7 +156,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n/* harmony import */ var _Components_Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Nav */ \"./src/Components/Nav.js\");\n\r\n\r\n\r\nfunction InitalizeSite() {\r\n    const content = document.getElementById('content')\r\n    content.appendChild((0,_Components_Nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\r\n\r\n    return content\r\n}\r\n\r\nInitalizeSite()\n\n//# sourceURL=webpack://food-site/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/main.scss */ \"./src/sass/main.scss\");\n/* harmony import */ var _Components_Nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Components/Nav */ \"./src/Components/Nav.js\");\n/* harmony import */ var _Pages_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Pages/Home */ \"./src/Pages/Home.js\");\n\r\n\r\n\r\n\r\nfunction InitalizeSite() {\r\n    const content = document.getElementById('content')\r\n    content.appendChild((0,_Components_Nav__WEBPACK_IMPORTED_MODULE_1__[\"default\"])())\r\n    content.appendChild((0,_Pages_Home__WEBPACK_IMPORTED_MODULE_2__[\"default\"])())\r\n\r\n    return content\r\n}\r\n\r\nInitalizeSite()\n\n//# sourceURL=webpack://food-site/./src/index.js?");
 
 /***/ })
 
