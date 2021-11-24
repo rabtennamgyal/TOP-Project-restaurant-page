@@ -5,6 +5,10 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr;
 
+    @include respond(phone) {
+        height: 90vh;
+    }
+
     .divOneStyle {
         display: grid;
         place-items: center;
@@ -16,6 +20,10 @@
             text-shadow: 3px 3px #024da1;
             font-size: 3rem;
             font-family: Permanent Marker, sans-serif;
+
+            @include respond(phone) {
+                margin-top: -100px;
+            }
         }
 
         .naruto {
@@ -34,19 +42,34 @@
             display: grid;
             place-items: center;
 
+            @include respond(phone) {
+                height: 90%;
+                width: 95%;
+            }
+
             .paraStyle {
                 color: #f05321;
                 text-shadow: .5px .5px #024da1;
                 font-family: Permanent Marker, sans-serif;
                 font-size: 2rem;
+
+                @include respond(phone) {
+                    font-size: 1.7rem;
+                }
             }
         }
 
         .kakashi {
+            cursor: pointer;
             position: absolute;
             height: 13rem;
             right: 0rem;
-            top: 18.5rem;
+            top: 18.8rem;
+
+            @include respond(phone) {
+                top: 36.5rem;
+                left: 19rem;
+            }
         }
     }
 }

@@ -36,7 +36,7 @@ function Home() {
     But when I became one I wasn't really fulfilled, something was missing. 
     Then I realized that owning a Ramen Shop was my dream all along.
     Don't get me wrong, I love being the Hokage but I love Ramen more.
-    So guys do visit my Ramen Shop, if it's good enough for the Hokage
+    So guys do visit my Ramen Shop, if it's good enough for the Hokage,
     it's good enough for you.
     `
 
