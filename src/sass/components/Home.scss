@@ -1,5 +1,52 @@
 .homeStyle {
-    background: #1bf0ff;
-    height: 80vh;
+    background: #ffa500;
+    height: 47.7rem;
     display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    .divOneStyle {
+        display: grid;
+        place-items: center;
+
+        .h1Style {
+            cursor: pointer;
+            margin-top: -30px;
+            color: #f05321;
+            text-shadow: 3px 3px #024da1;
+            font-size: 3rem;
+            font-family: Permanent Marker, sans-serif;
+        }
+
+        .naruto {
+            height: 10rem;
+        }
+    }
+
+    .divTwoStyle {
+        position: relative;
+        display: grid;
+        place-items: center;
+
+        .introStyle {
+            height: 80%;
+            width: 50%;
+            display: grid;
+            place-items: center;
+
+            .paraStyle {
+                color: #f05321;
+                text-shadow: .5px .5px #024da1;
+                font-family: Permanent Marker, sans-serif;
+                font-size: 2rem;
+            }
+        }
+
+        .kakashi {
+            position: absolute;
+            height: 13rem;
+            right: 0rem;
+            top: 18.5rem;
+        }
+    }
 }
