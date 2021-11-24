@@ -1,5 +1,13 @@
 .menuStyle {
     background: #20ff97;
-    height: 80vh;
+    height: 47.7rem;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+    .divStyle {
+        border: solid;
+        height: 20%;
+        width: 20%;
+    }
 }
