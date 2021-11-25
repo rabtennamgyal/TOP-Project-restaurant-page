@@ -20,7 +20,7 @@ function Navbar() {
 
     homeBtn.textContent = 'Home'
     menuBtn.textContent = 'Menu'
-    aboutBtn.textContent = 'About'
+    aboutBtn.textContent = 'Contact'
 
     homeBtn.addEventListener('click', () => {
         const content = document.getElementById('content')

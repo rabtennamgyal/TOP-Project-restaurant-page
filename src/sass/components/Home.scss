@@ -67,8 +67,7 @@
             top: 18.8rem;
 
             @include respond(phone) {
-                top: 36.5rem;
-                left: 19rem;
+                display: none;
             }
         }
     }

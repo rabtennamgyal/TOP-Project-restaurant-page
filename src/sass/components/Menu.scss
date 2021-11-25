@@ -1,13 +1,30 @@
 .menuStyle {
-    background: #20ff97;
-    height: 47.7rem;
+    background: #ffa500;
+    height: 80rem;
+    max-height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
 
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
     .divStyle {
-        border: solid;
-        height: 20%;
-        width: 20%;
+        margin: .5rem;
+
+        .imgStyle {
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+            display: grid;
+            place-items: center;
+
+            .ramen {
+                max-width: 100%;
+                min-height: 100%;
+                object-fit: contain;
+            }
+        }
     }
 }
