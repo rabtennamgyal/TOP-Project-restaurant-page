@@ -1,6 +1,7 @@
 .menuStyle {
     background: #ffa500;
-    height: 80rem;
+    min-height: 80rem;
+    max-height: auto;
     max-height: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,8 +11,15 @@
         grid-template-columns: 1fr;
     }
 
+    @include respond(tab-port) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .divStyle {
-        margin: .5rem;
+        position: relative;
+        margin: 1rem;
+        display: grid;
+        grid-template-rows: 90% 10%;
 
         .imgStyle {
             height: 100%;
@@ -21,9 +29,48 @@
             place-items: center;
 
             .ramen {
-                max-width: 100%;
-                min-height: 100%;
-                object-fit: contain;
+                height: 100%;
+                width: 100%;
+
+                &:hover {
+                    background: #fff;
+                }
+            }
+        }
+
+        .textStyle {
+            top: 90%;
+            position: absolute;
+            display: grid;
+            justify-content: center;
+            cursor: pointer;
+            height: 5rem;
+            width: 100%;
+            border: solid #000000;
+            background: #000;
+            transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
+            //transition: ease-in-out 0.7s;
+            overflow: hidden;
+
+            &:hover {
+                top: 50%;
+                height: 20rem;
+            }
+
+            .h1Style {
+                display: grid;
+                place-items: center;
+                margin: 1rem 0;
+                font-size: 2rem;
+                color: #fff;
+                font-family: Architects Daughter, monospace, sans-serif;
+            }
+
+            .pstyle {
+                margin: 0 .5rem;
+                font-size: 1.8rem;
+                color: #fff;
+                font-family: Architects Daughter, monospace, sans-serif;
             }
         }
     }
