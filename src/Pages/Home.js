@@ -27,24 +27,32 @@ function Home() {
     const intro = document.createElement('div')
     intro.classList.add('introStyle')
 
-    const para = document.createElement('p')
-    para.classList.add('paraStyle')
-    para.textContent = 
-    `
-    Hey Guys !! This is your boy Uzumaki. As you all might know, 
-    every since I was a little kid I always wanted to be a Hokage.
-    But when I became one I wasn't really fulfilled, something was missing. 
-    Then I realized that owning a Ramen Shop was my dream all along.
-    Don't get me wrong, I love being the Hokage but I love Ramen more.
-    So guys do visit my Ramen Shop, if it's good enough for the Hokage,
-    it's good enough for you.
-    `
+    const introOne = document.createElement('div')
+    introOne.classList.add('introOneStyle')
+    const h1 = document.createElement('h1')
+    h1.classList.add('h1Style')
+    h1.textContent = 'Meet our Staffs'
+
+    const introTwo = document.createElement('div')
+    introTwo.classList.add('introTwoStyle')
+
+    const cardOne = document.createElement('div')
+    const cardTwo = document.createElement('div')
+    const cardThree = document.createElement('div')
+    cardOne.classList.add('cardStyle')
+    cardTwo.classList.add('cardStyle')
+    cardThree.classList.add('cardStyle')
+    introTwo.appendChild(cardOne)
+    introTwo.appendChild(cardTwo)
+    introTwo.appendChild(cardThree)
+
+    introOne.appendChild(h1)
+    intro.appendChild(introOne)
+    intro.appendChild(introTwo)
 
     const img2 = new Image()
     img2.classList.add('kakashi')
     img2.src = Kakashi
-
-    intro.appendChild(para)
 
     divTwo.appendChild(intro)
     divTwo.appendChild(img2)
