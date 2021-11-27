@@ -81,17 +81,50 @@ function Home() {
     contentOne.classList.add('contentStyle')
     contentOne.textContent = 
     `
-    Hello Shibonis!! This is your Hokage. Welcome to my restarant.
-    Hello Shibonis!! This is your Hokage. Welcome to my restarant.
+    This is your boy Uzumaki. I hope you enjoy our Ramen 🍜 & do come again.
+    `
+
+    const paraTwo = document.createElement('div')
+    paraTwo.classList.add('paraStyle')
+
+    const textTwo = document.createElement('h1')
+    textTwo.classList.add('letterStyle')
+    textTwo.textContent = 'Choji (Chef)'
+
+    const contentTwo = document.createElement('p')
+    contentTwo.classList.add('contentStyle')
+    contentTwo.textContent = 
+    `
+    Our Ramen is made from the Teuchi's Recipe, plus we also add Love ❤
+    `
+
+    const paraThree = document.createElement('div')
+    paraThree.classList.add('paraStyle')
+
+    const textThree = document.createElement('h1')
+    textThree.classList.add('letterStyle')
+    textThree.textContent = 'Sakura (Waitress)'
+
+    const contentThree = document.createElement('p')
+    contentThree.classList.add('contentStyle')
+    contentThree.textContent = 
+    `
+    If you need an extra bowl, just ask. 🙋‍♂️🙋‍♀️ But no fighting OK ..
     `
 
     paraOne.appendChild(textOne)
     paraOne.appendChild(contentOne)
+    paraTwo.appendChild(textTwo)
+    paraTwo.appendChild(contentTwo)
+    paraThree.appendChild(textThree)
+    paraThree.appendChild(contentThree)
 
     cardOne.appendChild(picOne)
     cardTwo.appendChild(picTwo)
     cardThree.appendChild(picThree)
     cardOne.appendChild(paraOne)
+    cardTwo.appendChild(paraTwo)
+    cardThree.appendChild(paraThree)
 
     introTwo.appendChild(cardOne)
     introTwo.appendChild(cardTwo)

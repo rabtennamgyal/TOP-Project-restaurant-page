@@ -4,10 +4,9 @@
     height: 60rem;
     display: grid;
     grid-template-columns: 1fr;
-    //grid-template-rows: 1fr 2fr;
 
     @include respond(phone) {
-        height: 90vh;
+        height: 100rem;
     }
 
     .divOneStyle {
@@ -38,6 +37,10 @@
         position: relative;
         display: grid;
         place-items: center;
+
+        @include respond(phone) {
+            height: 85rem;
+        }
 
         .introStyle {
             display: grid;
@@ -75,17 +78,27 @@
                 place-items: center;
                 grid-template-columns: repeat(3, 1fr);
 
+                @include respond(phone) {
+                    height: 65rem;
+                    grid-template-columns: 1fr;
+                }
+
                 .cardStyle {
                     cursor: pointer;
                     display: grid;
                     grid-template-columns: 1fr;
                     grid-template-rows: repeat(2, 1fr);
                     border-radius: 5px;
-                    background: #ffffff;
+                    background: #ffa500;
                     height: 40%;
-                    width: 70%;
+                    width: 75%;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
                     transition: 0.5s all;
+
+                    @include respond(phone) {
+                        height: 30%;
+                        width: 50%;
+                    }
 
                     &:hover {
                         height: 70%;
@@ -96,10 +109,12 @@
 
                         & .paraStyle {
                             display: grid;
+                            transition-delay: .5s;
                         }
                     }
 
                     .picStyle {
+                        z-index: 100;
                         background: #fff;
                         border: none;
                         border-radius: 5px;
@@ -124,20 +139,28 @@
                         margin-top: -5rem;
                         grid-template-columns: 1fr;
                         grid-template-rows: 1fr 2fr;
+                        transition: 0.5s ease-in-out;
 
                         .letterStyle {     
                             display: grid;
                             place-items: center;
-                            font-size: 1.4rem;
-                            font-family: monospace, cursive, sans-serif;
+                            font-size: 2rem;
+                            font-family: Permanent Marker, monospace, cursive, sans-serif;
+                            color: #f05321;
+                            text-shadow: 2px 2px #024da1;
+
+                            @include respond(phone) {
+                                font-size: 1.7rem;
+                            }
                         }
 
                         .contentStyle {
                             display: grid;
                             place-items: center;
-                            font-size: 1.3rem;
-                            font-family: monospace, cursive, sans-serif;
+                            font-size: 1.5rem;
+                            font-family: Permanent Marker, monospace, cursive, sans-serif;
                             padding: 0 5px;
+                            color: #f05321;
                         }
                     }
                 }
@@ -147,9 +170,9 @@
         .kakashi {
             cursor: pointer;
             position: absolute;
-            height: 13rem;
+            height: 10rem;
             right: 0rem;
-            top: 18.8rem;
+            top: 35rem;
 
             @include respond(phone) {
                 display: none;
