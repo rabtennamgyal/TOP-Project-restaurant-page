@@ -1,15 +1,17 @@
 .homeStyle {
     background: #ffa500;
     height: 47.7rem;
+    height: 60rem;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr;
+    //grid-template-rows: 1fr 2fr;
 
     @include respond(phone) {
         height: 90vh;
     }
 
     .divOneStyle {
+        height: 15rem;
         display: grid;
         place-items: center;
 
@@ -32,13 +34,13 @@
     }
 
     .divTwoStyle {
+        height: 45rem;
         position: relative;
         display: grid;
         place-items: center;
 
         .introStyle {
             display: grid;
-            grid-template-rows: 1fr 3fr;
             background: linear-gradient(to right,#ffae16, #ffb52c);
             border-radius: 2rem;
             height: 90%;
@@ -59,22 +61,85 @@
                 place-items: center;
 
                 .h1Style {
-                    font-size: 1.5rem;
+                    font-size: 2rem;
                     font-family: Permanent Marker, sans-serif;
+                    color: #f05321;
+                    text-shadow: 2px 2px #024da1;
                 }
             }
 
             .introTwoStyle {
-                height: 25rem;
+                height: 35rem;
                 width: 100%;
                 display: grid;
                 place-items: center;
                 grid-template-columns: repeat(3, 1fr);
 
                 .cardStyle {
-                    height: 90%;
-                    width: 80%;
+                    cursor: pointer;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-rows: repeat(2, 1fr);
+                    border-radius: 5px;
+                    background: #ffffff;
+                    height: 40%;
+                    width: 70%;
                     box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+                    transition: 0.5s all;
+
+                    &:hover {
+                        height: 70%;
+
+                        & .picStyle {
+                            margin-top: -13rem;
+                        }
+
+                        & .paraStyle {
+                            display: grid;
+                        }
+                    }
+
+                    .picStyle {
+                        background: #fff;
+                        border: none;
+                        border-radius: 5px;
+                        margin-top: -10rem;
+                        height: 12rem;
+                        width: 80%;
+                        place-self: center;
+                        transition: 0.5s all;
+                        box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+                        .imgStyle {
+                            border-radius: 5px;
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+
+                    .paraStyle {
+                        display: none;
+                        height: 18rem;
+                        margin-top: -5rem;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr 2fr;
+
+                        .letterStyle {     
+                            display: grid;
+                            place-items: center;
+                            font-size: 1.4rem;
+                            font-family: monospace, cursive, sans-serif;
+                        }
+
+                        .contentStyle {
+                            display: grid;
+                            place-items: center;
+                            font-size: 1.3rem;
+                            font-family: monospace, cursive, sans-serif;
+                            padding: 0 5px;
+                        }
+                    }
                 }
             }
         }

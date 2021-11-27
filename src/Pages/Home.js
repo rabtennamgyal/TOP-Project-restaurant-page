@@ -1,6 +1,10 @@
 import Naruto from '../Asset/img.png'
 import Kakashi from '../Asset/up.png'
 
+import narutoPic from '../Asset/narutoPic.jpg'
+import chogiPic from '../Asset/chogiPic.jpeg'
+import sakuraPic from '../Asset/sakuraPic.jpg'
+
 function Home() {
     const div = document.createElement('div')
     div.classList.add('homeStyle')
@@ -42,6 +46,53 @@ function Home() {
     cardOne.classList.add('cardStyle')
     cardTwo.classList.add('cardStyle')
     cardThree.classList.add('cardStyle')
+
+    const picOne = document.createElement('div')
+    const picTwo = document.createElement('div')
+    const picThree = document.createElement('div')
+    picOne.classList.add('picStyle')
+    picTwo.classList.add('picStyle')
+    picThree.classList.add('picStyle')
+
+    const imgOne = new Image()
+    imgOne.classList.add('imgStyle')
+    imgOne.src = narutoPic
+
+    const imgTwo = new Image()
+    imgTwo.classList.add('imgStyle')
+    imgTwo.src = chogiPic
+
+    const imgThree = new Image()
+    imgThree.classList.add('imgStyle')
+    imgThree.src = sakuraPic
+
+    picOne.appendChild(imgOne)
+    picTwo.appendChild(imgTwo)
+    picThree.appendChild(imgThree)
+
+    const paraOne = document.createElement('div')
+    paraOne.classList.add('paraStyle')
+
+    const textOne = document.createElement('h1')
+    textOne.classList.add('letterStyle')
+    textOne.textContent = 'Naruto (Owner)'
+
+    const contentOne = document.createElement('p')
+    contentOne.classList.add('contentStyle')
+    contentOne.textContent = 
+    `
+    Hello Shibonis!! This is your Hokage. Welcome to my restarant.
+    Hello Shibonis!! This is your Hokage. Welcome to my restarant.
+    `
+
+    paraOne.appendChild(textOne)
+    paraOne.appendChild(contentOne)
+
+    cardOne.appendChild(picOne)
+    cardTwo.appendChild(picTwo)
+    cardThree.appendChild(picThree)
+    cardOne.appendChild(paraOne)
+
     introTwo.appendChild(cardOne)
     introTwo.appendChild(cardTwo)
     introTwo.appendChild(cardThree)
