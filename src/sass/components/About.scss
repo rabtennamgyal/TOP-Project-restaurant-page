@@ -1,5 +1,60 @@
 .aboutStyle {
-    background: #1b98ff;
-    height: 80vh;
+    position: relative;
+    background: #000000;
+    height: 60rem;
     display: grid;
+
+    .backStyle {
+        height: inherit;
+        overflow: hidden;
+
+        .backingStyle {
+            opacity: 0.9 #fff;
+            height: 100%;
+            width: 100%;
+
+            @include respond(phone) {
+                width: 200%;
+                object-fit: fill;
+            }
+        }
+    }
+    
+    .frontStyle {
+        opacity: 0.8;
+        border: none;
+        border-radius: 5px;
+        background: #000000;
+        justify-self: center;
+        align-self: center;
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        display: grid;
+        place-items: center;
+
+        @include respond(phone) {
+            width: 90%;
+        }
+
+        .contentStyle {
+            height: 90%;
+            width: 95%;
+            display: grid;
+            place-items: center;
+
+            .h1Style {
+                font-size: 2rem;
+                color: #fff;
+                font-family: Cursive, Permanent Marker, sans-serif;
+            }
+
+            .pStyle {
+                font-size: 1.8rem;
+                color: #fff;
+                font-family: cursive, Permanent Marker, sans-serif;
+            }
+        }
+    }
 }
