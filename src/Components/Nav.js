@@ -1,6 +1,7 @@
 import Home from '../Pages/Home'
 import Menu from '../Pages/Menu'
 import About from '../Pages/About'
+import Footer from '../Components/Footer'
 
 function Navbar() {
     const Nav = document.createElement('div')
@@ -27,6 +28,7 @@ function Navbar() {
         content.innerHTML = ''
         content.appendChild(Navbar())
         content.appendChild(Home())
+        content.appendChild(Footer())
     })
 
     menuBtn.addEventListener('click', () => {
@@ -34,6 +36,7 @@ function Navbar() {
         content.innerHTML = ''
         content.appendChild(Navbar())
         content.appendChild(Menu())
+        content.appendChild(Footer())
     })
 
     aboutBtn.addEventListener('click', () => {
@@ -41,6 +44,7 @@ function Navbar() {
         content.innerHTML = ''
         content.appendChild(Navbar())
         content.appendChild(About())
+        content.appendChild(Footer())
     })
 
     divOne.appendChild(homeBtn)

@@ -39,8 +39,8 @@
         }
 
         .textStyle {
-            top: 90%;
             position: absolute;
+            top: 90%;
             display: grid;
             justify-content: center;
             cursor: pointer;
@@ -49,7 +49,6 @@
             border: solid #000000;
             background: #000;
             transition: all 0.5s cubic-bezier(.48, -0.28, 0.41, 1.4);
-            //transition: ease-in-out 0.7s;
             overflow: hidden;
 
             &:hover {
@@ -64,13 +63,16 @@
                 font-size: 2rem;
                 color: #fff;
                 font-family: Architects Daughter, monospace, sans-serif;
+                color: #f05321;
+                text-shadow: 1px 1px #024da1;
             }
 
             .pstyle {
                 margin: 0 .5rem;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 color: #fff;
-                font-family: Architects Daughter, monospace, sans-serif;
+                font-family: Cursive, Permanent Marker, monospace, sans-serif;
+                color: #ffffff;
             }
         }
     }

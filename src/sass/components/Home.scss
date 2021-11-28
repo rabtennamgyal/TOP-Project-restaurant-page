@@ -166,17 +166,5 @@
                 }
             }
         }
-
-        .kakashi {
-            cursor: pointer;
-            position: absolute;
-            height: 10rem;
-            right: 0rem;
-            top: 35rem;
-
-            @include respond(phone) {
-                display: none;
-            }
-        }
     }
 }

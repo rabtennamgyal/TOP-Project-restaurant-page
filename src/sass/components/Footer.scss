@@ -1,0 +1,58 @@
+.footerStyle {
+    height: 15rem;
+    background: #ffa500;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    @include respond(phone) {
+        grid-template-columns: 1fr;
+    }
+
+    .f1Style {
+        display: grid;
+        place-items: center;
+
+        .headerStyle {
+            font-size: 2rem;
+            font-family: Permanent Marker, sans-serif;
+            color: #f05321;
+            text-shadow: 2px 2px #024da1;
+        }
+    }
+
+    .f2Style {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .imgStyle {
+
+            i {
+                cursor: pointer;
+                color: #f05321;
+                text-shadow: 2px 2px #024da1;
+                font-size: 5rem;
+                margin: 0 5rem;
+
+                @include respond(phone) {
+                    font-size: 3rem;
+                    margin: 0 3rem;
+                }
+            }
+
+            a {
+                border: solid;
+            }
+        }
+        
+        .kakashi {
+            cursor: pointer;
+            margin-top: 5rem;
+            height: 10rem;
+
+            @include respond(phone) {
+                display: none;
+            }
+        }
+    }
+}

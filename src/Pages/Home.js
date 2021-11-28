@@ -1,5 +1,4 @@
 import Naruto from '../Asset/img.png'
-import Kakashi from '../Asset/up.png'
 
 import narutoPic from '../Asset/narutoPic.jpg'
 import chogiPic from '../Asset/chogiPic.jpeg'
@@ -134,12 +133,7 @@ function Home() {
     intro.appendChild(introOne)
     intro.appendChild(introTwo)
 
-    const img2 = new Image()
-    img2.classList.add('kakashi')
-    img2.src = Kakashi
-
     divTwo.appendChild(intro)
-    divTwo.appendChild(img2)
 
     div.appendChild(divOne)
     div.appendChild(divTwo)
