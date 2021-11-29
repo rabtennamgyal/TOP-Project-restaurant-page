@@ -54,11 +54,6 @@ function Navbar() {
 
     const divTwo = document.createElement('div')
     divTwo.classList.add('divTwoStyle')
-    
-    const orderBtn = document.createElement('button')
-    orderBtn.classList.add('orderStyle')
-    orderBtn.textContent = 'Order Now'
-    divTwo.appendChild(orderBtn)
 
     Nav.appendChild(divOne)
     Nav.appendChild(divTwo)
